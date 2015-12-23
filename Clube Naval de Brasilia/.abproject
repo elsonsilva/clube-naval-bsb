@@ -2,9 +2,9 @@
   "ProjectName": "Clube Naval de Brasilia",
   "ProjectGuid": "6829e068-1c63-4378-b58e-62bd28191def",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.ClubeNavaldeBrasilia",
+  "AppIdentifier": "com.axionet.ClubeNavaldeBrasilia",
   "DisplayName": "Clube Naval de Brasilia",
-  "Author": "",
+  "Author": "elsoncarlos@gmail.com",
   "Description": "Clube Naval de Brasilia",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
@@ -12,7 +12,9 @@
     "1",
     "2"
   ],
-  "iOSBackgroundMode": [],
+  "iOSBackgroundMode": [
+    "remote-notification"
+  ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "3.7.0",
   "AndroidPermissions": [
@@ -22,13 +24,14 @@
     "Portrait",
     "Landscape"
   ],
-  "AndroidHardwareAcceleration": "false",
+  "AndroidHardwareAcceleration": "True",
   "iOSStatusBarStyle": "Default",
   "Framework": "Cordova",
   "WP8TileTitle": "",
   "WP8Publisher": "",
   "WP8Capabilities": [
     "ID_CAP_NETWORKING",
+    "ID_CAP_PUSH_NOTIFICATION",
     "ID_CAP_WEBBROWSERCOMPONENT"
   ],
   "WP8Requirements": [],
@@ -41,5 +44,14 @@
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "com.telerik.plugin.eqatecanalytics",
+    "org.apache.cordova.device",
+    "org.apache.cordova.dialogs",
+    "org.apache.cordova.geolocation",
+    "org.apache.cordova.network-information",
+    "org.apache.cordova.splashscreen",
+    "org.apache.cordova.statusbar"
   ]
 }

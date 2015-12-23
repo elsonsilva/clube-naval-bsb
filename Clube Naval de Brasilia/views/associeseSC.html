@@ -1,0 +1,61 @@
+<div id="associeseSC" data-role="view" data-title="Associe-se" data-layout="main" data-transition="fade" data-model="APP.models.contacts" data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar" id="normal" class="km-accent">
+            <a id="hamburguer" data-align="left" data-role="button" href="#appDrawer" data-rel="drawer" data-icon="drawer-icon"></a>
+            <span class="titulo" data-role="view-title"></span>
+        </div>
+    </header>
+    <div class="corFundo" align="justify">
+        <div class="buttons" align="center">
+            <div class="topSpace"></div>
+            <div>
+                <div class="flexButtons">
+                    <a href="views/associeseEA.html" data-role="button" class="km-primary km-justified km-small">Categoria EA</a>
+                </div>
+                <div class="flexButtons">
+                    <a href="views/associeseEB.html" data-role="button" class="km-primary km-justified km-small">Categoria EB</a>
+                </div>
+            </div>
+            <div class="topSpace"></div>
+            <div>
+                <div class="flexButtons">
+                    <a href="views/associeseCA.html" data-role="button" class="km-primary km-justified km-small">Categoria CA</a>
+                </div>
+                <div class="flexButtons">
+                    <a href="views/associeseCB.html" data-role="button" class="km-primary km-justified km-small">Categoria CB</a>
+                </div>
+            </div>
+            <div class="topSpace"></div>
+            <div>
+                <div class="flexButtons">
+                    <a href="views/associeseCC.html" data-role="button" class="km-primary km-justified km-small">Categoria CC</a>
+                </div>
+                <div class="flexButtons">
+                    <a href="views/associeseCD.html" data-role="button" class="km-primary km-justified km-small">Categoria CD</a>
+                </div>
+            </div>
+            <div class="topSpace"></div>
+            <div>
+                <div class="flexButtons">
+                    <a href="views/associeseCE.html" data-role="button" class="km-primary km-justified km-small">Categoria CE</a>
+                </div>
+                <div class="flexButtons">
+                    <a href="views/associeseCG.html" data-role="button" class="km-primary km-justified km-small">Categoria CG</a>
+                </div>
+            </div>
+            <div class="topSpace"></div>
+        </div>
+        <p id="secretaria">Categoria SC</p>
+        <div id="contentAssocieseSC" class="historia"></div>
+        <div class="topSpace"></div>
+        <a data-role="button" title="Proposta de Associação" href="http://www.clubenavaldf.com.br/images/clubenaval/artigos/associe_se/proposta.pdf" target="_blank">Proposta de Associação</a>
+        <div class="topSpace"></div>
+        <a data-role="button" title="Formulário de Cadastramento" href="http://www.clubenavaldf.com.br/images/clubenaval/artigos/rec_dados/Recadastramento_de_dados.doc" target="_blank">Proposta de Associação</a>
+        <div class="topSpace"></div>
+    </div>
+        <script>
+            function handleResponseSC(response) {
+                $("#contentAssocieseSC").append("<p>" + response.content + "</p>");
+            }
+        </script>
+        <script src="https://www.googleapis.com/blogger/v3/blogs/817691897847430809/pages/715900151927371030?callback=handleResponseSC&key=AIzaSyC1_f4NCdpNOw8miHl__HlZHKHvdmOMH-c">

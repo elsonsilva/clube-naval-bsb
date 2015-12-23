@@ -3,49 +3,57 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    
+    <link href="styles/kendo.mobile.nova.min.css" rel="stylesheet" />
+    <link href="styles/fonts.css" rel="stylesheet" />
     <link href="styles/main.css" rel="stylesheet" />
-
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
-
+    <script src="kendo/js/kendo.custom.min.js"></script>
+    <script src="scripts/kendo.custom.js"></script>
     <script src="scripts/app.js"></script>
-
 </head>
+
 <body>
- 
-  <div data-role="layout" data-id="main">
-    <div data-role="header">
-      <div data-role="navbar">
-        <span data-role="view-title"></span>
-        <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
-      </div>
+    <div data-role="layout" data-id="main">
+        <div data-role="header">
+            <div data-role="navbar" class="km-accent">
+                <span data-role="view-title"></span>
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+            </div>
+        </div>
+        <!-- application views will be rendered here -->
     </div>
-
-    <!-- application views will be rendered here -->
-    
-  </div>
-
-  <!-- application drawer and contents -->
-  <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="Navigation">
-    <div data-role="header">
-      <div data-role="navbar">
-        <span data-role="view-title"></span>
-      </div>
+    <!-- application drawer and contents -->
+    <div id="appDrawer" class="menu" data-role="drawer" data-stretch="false" data-use-native-scrolling="true" data-title="Menu do Naval">
+        <div data-role="header">
+            <div data-role="navbar">
+                <span id="menuDoNaval" data-role="view-title"></span>
+            </div>
+        </div>
+        <ul data-role="listview">
+            <li><a href="views/home.html">Notícias</a>
+            </li>
+            <li><a href="views/localizacao.html">Localização</a>
+            </li>
+            <li><a href="views/conheca.html">Conheça o Clube</a>
+            </li>
+            <li><a href="views/historia.html">História</a>
+            </li>
+            <li><a href="views/diretoria.html">Diretoria</a>
+            </li>
+            <li><a href="views/secretariaP.html">Secretarias</a>
+            </li>
+            <li><a href="views/associese.html">Associe-se</a>
+            </li>
+            <li><a href="views/informacoesGerais.html">Informações Gerais</a>
+            </li>
+            <li><a href="views/contato.html">Contato</a>
+            </li>
+        </ul>
     </div>
-    <ul data-role="listview">
-      <li>
-        <a href="views/home.html">Home</a>
-      </li>
-      <li>
-        <a href="views/settings.html">Settings</a>
-      </li>
-      <li>
-        <a href="views/contacts.html">Contacts</a>
-      </li>
-    </ul>
-  </div>       
-
 </body>
+
 </html>

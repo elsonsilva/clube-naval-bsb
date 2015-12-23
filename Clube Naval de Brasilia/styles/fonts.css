@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'naval35';
+    src: url('fonts/CoreSansG35-webfont.woff2') format('woff2'),
+         url('fonts/CoreSansG35-webfont.woff') format('woff'),
+         url('fonts/CoreSansG35-webfont.ttf') format('truetype'),
+         url('fonts/CoreSansG35-webfont.svg#core_sans_g_35_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'naval85';
+    src: url('fonts/CoreSansG85-webfont.woff2') format('woff2'),
+         url('fonts/CoreSansG85-webfont.woff') format('woff'),
+         url('fonts/CoreSansG85-webfont.ttf') format('truetype'),
+         url('fonts/CoreSansG85-webfont.svg#core_sans_g_35_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+

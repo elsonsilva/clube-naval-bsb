@@ -1,3 +1,91 @@
-<div data-role="view" data-title="Home" data-layout="main" data-model="APP.models.home">
-  <h1 data-bind="html: title"></h1>
-</div>
+<div data-role="view" data-title="Clube Naval" data-layout="main" data-model="APP.models.home" id="index" data-show="nullCurrentExample" data-init="initSearch" data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar" id="normal" class="km-accent">
+            <a id="hamburguer" data-align="left" data-role="button" href="#appDrawer" data-rel="drawer" data-icon="drawer-icon"></a>
+            <span id="navalTitulo" data-role="view-title"></span>
+            <span id="navalSubTitulo" class="km-view-subtitle">O mais bonito de Brasília</span>
+            <object data-align="right" id="logo" type="image/svg+xml" data="styles/images/logo.svg">Your browser does not support SVG</object>
+            <!--<a data-align="right" data-role="button" data-click="showSearch" data-click-on="down" data-icon="search"></a>-->
+        </div>
+    </header>
+    <div class="corFundo" align="justify">
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+        <div id="contentNoticias" class="noticias"></div>
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+		<div class="topSpace"></div>
+        <div id="contentNoticias1" class="noticias"></div>
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+        <div id="contentNoticias2" class="noticias"></div>
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+        <div id="contentNoticias3" class="noticias"></div>
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+        <div id="contentNoticias4" class="noticias"></div>
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+        <div class="topSpace"></div>
+        <div id="contentNoticias5" class="noticias"></div>
+        <div class="topSpace"></div>
+    </div>
+    <script>
+        function handleResponse(response) {
+            window.analytics.Start()
+            
+            var str = response.items[0].published;
+            var ano = str.substring(0, 4);
+            var mes = str.substring(5, 7);
+            var dia = str.substring(8, 10);
+            $("#contentNoticias").append("<span><i class='fa fa-calendar'></i>" + dia + "/" + mes + "/" + ano + "</span>");
+            $("#contentNoticias").append("<h2>" + response.items[0].title + "</h2>");
+            $("#contentNoticias").append("<div>" + response.items[0].content + "</div>");
+
+            var str1 = response.items[1].published;
+            var ano1 = str.substring(0, 4);
+            var mes1 = str.substring(5, 7);
+            var dia1 = str.substring(8, 10);
+            $("#contentNoticias1").append("<span><i class='fa fa-calendar'></i>" + dia1 + "/" + mes1 + "/" + ano1 + "</span>");
+            $("#contentNoticias1").append("<h2>" + response.items[1].title + "</h2>");
+            $("#contentNoticias1").append("<div>" + response.items[1].content + "</div>");
+
+            var str2 = response.items[2].published;
+            var ano2 = str.substring(0, 4);
+            var mes2 = str.substring(5, 7);
+            var dia2 = str.substring(8, 10);
+            $("#contentNoticias2").append("<span><i class='fa fa-calendar'></i>" + dia2 + "/" + mes2 + "/" + ano2 + "</span>");
+            $("#contentNoticias2").append("<h2>" + response.items[2].title + "</h2>");
+            $("#contentNoticias2").append("<div>" + response.items[2].content + "</div>");
+
+            var str3 = response.items[3].published;
+            var ano3 = str.substring(0, 4);
+            var mes3 = str.substring(5, 7);
+            var dia3 = str.substring(8, 10);
+            $("#contentNoticias3").append("<span><i class='fa fa-calendar'></i>" + dia3 + "/" + mes3 + "/" + ano3 + "</span>");
+            $("#contentNoticias3").append("<h2>" + response.items[3].title + "</h2>");
+            $("#contentNoticias3").append("<div>" + response.items[3].content + "</div>");
+
+            var str4 = response.items[4].published;
+            var ano4 = str.substring(0, 4);
+            var mes4 = str.substring(5, 7);
+            var dia4 = str.substring(8, 10);
+            $("#contentNoticias4").append("<span><i class='fa fa-calendar'></i>" + dia4 + "/" + mes4 + "/" + ano4 + "</span>");
+            $("#contentNoticias4").append("<h2>" + response.items[4].title + "</h2>");
+            $("#contentNoticias4").append("<div>" + response.items[4].content + "</div>");
+            
+            var str5 = response.items[5].published;
+            var ano5 = str.substring(0, 4);
+            var mes5 = str.substring(5, 7);
+            var dia5 = str.substring(8, 10);
+            $("#contentNoticias5").append("<span><i class='fa fa-calendar'></i>" + dia5 + "/" + mes5 + "/" + ano5 + "</span>");
+            $("#contentNoticias5").append("<h2>" + response.items[5].title + "</h2>");
+            $("#contentNoticias5").append("<div>" + response.items[5].content + "</div>");
+        }
+    </script>
+    <script src="https://www.googleapis.com/blogger/v3/blogs/817691897847430809/posts?view=READER&maxPosts=5&callback=handleResponse&key=AIzaSyC1_f4NCdpNOw8miHl__HlZHKHvdmOMH-c">
+    </script>

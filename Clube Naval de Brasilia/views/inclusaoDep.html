@@ -1,0 +1,25 @@
+<div data-role="view" data-title="Informações Gerais" data-layout="main" data-transition="fade" data-model="APP.models.contacts" data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar" id="normal" class="km-accent">
+            <a id="hamburguer" data-align="left" data-role="button" href="#appDrawer" data-rel="drawer" data-icon="drawer-icon"></a>
+            <span class="titulo" data-role="view-title"></span>
+        </div>
+    </header>
+    <div class="corFundo" align="justify">
+        <div class="buttons">
+            <div class="topSpace"></div>
+            <a href="views/retiradaConv.html" data-role="button" class="km-justified">Retirada de Convites</a>
+            <div class="topSpace"></div>
+            <a href="views/renovCartSoc.html" data-role="button" class="km-justified">Renovação de Carteira Social</a>
+            <div class="topSpace"></div>
+        </div>
+        <p id="secretaria">Inclusão de Dependentes</p>
+        <div id="inclusaoDep" class="historia"></div>
+        <div class="topSpace"></div>
+    </div>
+        <script>
+            function handleResponseID(response) {
+                $("#inclusaoDep").append("<p>" + response.content + "</p>");
+            }
+        </script>
+        <script src="https://www.googleapis.com/blogger/v3/blogs/817691897847430809/pages/8607080188552857708?callback=handleResponseID&key=AIzaSyC1_f4NCdpNOw8miHl__HlZHKHvdmOMH-c">

@@ -1,1 +1,252 @@
-.km-drawer-button:before, .km-drawer-button:after  { content: "\E077"; }
+
+.menu {
+    font-family: naval35;
+    font-size: 1.2em;
+}
+.corFundo {
+    background: #EAECED;
+
+}
+.topSpace {
+    width: 100%;
+    height: 0.6em;
+}
+#menuDoNaval {
+    font-family: naval35;
+    font-weight: bold;
+}
+#normal {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    box-sizing: content-box;
+    outline: none;
+    padding: 0;
+}
+#navalTitulo {
+    font-family: naval85;
+    font-size: 1.4em;
+    text-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    padding-bottom: 1.5em;
+}
+#navalSubTitulo {
+    font-family: naval35;
+}
+#tituloHistoria {
+    font-family: naval85;
+    padding-bottom: 0;
+    font-size: 1.5em;
+    color: #3262BA;
+    text-align: center;
+}
+.titulo {
+    font-family: naval35;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 1.5em;
+}
+.conteudo {
+    font-family: naval35;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    background:#FFFFFF;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.historia {
+    font-family: naval35;
+    font-size: 1.4em;
+    margin-left: 7px;
+    margin-right: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: rgb(246, 246, 246);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.diretoria {
+    font-family: naval35;
+    font-size: 1.4em;
+    text-align: center;
+    margin-left: 7px;
+    margin-right: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: rgb(246, 246, 246);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.noticias {
+    font-family: naval35;
+    font-size: 1.2em;
+    margin-left: 7px;
+    margin-right: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: rgb(246, 246, 246);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+}
+.noticias h1 {
+    font-family: naval85;
+    font-size: 1.4em;
+    color: #6589CB;
+    text-align: center;
+}
+.noticias h2 {
+    font-family: naval85;
+    font-size: 1.4em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .14), 0 1px 1px rgba(0, 0, 0, .28);
+    width: 100%;
+    color: #5e88d4;
+    text-align: center;
+}
+
+#secretaria {
+    font-family: naval85;
+    font-size: 1.7em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .14), 0 1px 1px rgba(0, 0, 0, .28);
+    color: #5e88d4;
+    text-align: center;
+}
+
+.noticias span {
+    font-size: 0.7em;
+    font-weight: bold;
+    padding-bottom: 0;
+    text-align: right;
+    color: #8c8c8c;
+    position: absolute;
+    transform: translate(-0.5em, -105%);
+}
+
+.buttons{
+    font-family: naval35;
+    font-size: 1.4em;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.flexButtons{
+
+    display: inline-flex;
+      -webkit-flex: 1;
+          flex: 1;
+    width: 140px;
+
+}
+
+
+#logo {
+    height: 3em;
+    padding-right: 1.5em;
+}
+#logo2 {
+    height: 8em;
+    padding-top: 0.3em;
+    padding-bottom: 0.1em;
+    display: block;
+    margin: auto;
+}
+#hamburguer {
+    font-size: 1.45rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-0.15em, -15%);
+}
+#calendario {
+    padding-right: 4px;
+}
+iframe {
+    width: 95%;
+    height: 300px;
+}
+
+.bottomSpace{
+    width: 100%;
+    height: 0.2em;
+}
+
+.email {
+    font-family: naval35;
+    font-size: 1.1em;
+    margin-left: 7px;
+    margin-right: 7px;
+    width:95%;
+}
+
+@media(min-height:490px) {
+    iframe {
+        width: 95%;
+        height: 385px;
+    }
+    
+    .bottomSpace{
+    width: 100%;
+    height: 6em;
+}
+    .email {
+    font-family: naval35;
+    font-size: 1.15em;
+    margin-left: 7px;
+    margin-right: 7px;
+    width:95%;
+}
+    
+}
+@media(min-height:570px) {
+    iframe {
+        width: 95%;
+        height: 460px;
+    }
+        .bottomSpace{
+    width: 100%;
+    height: 13em;
+}
+        .email {
+    font-family: naval35;
+    font-size: 1.3em;
+    margin-left: 7px;
+    margin-right: 7px;
+    width:95%;
+}
+    
+    @media(min-height:650px) {
+        iframe {
+            width: 95%;
+            height: 550px;
+        }
+                .bottomSpace{
+    width: 100%;
+    height: 18em;
+}
+                .email {
+    font-family: naval35;
+    font-size: 1.4em;
+    margin-left: 7px;
+    margin-right: 7px;
+    width:95%;
+}
+    }
+    /*
+cores de fundo:
+4b6d9b
+
+2A8FBD
+
+4285F4
+
+3262BA - atual
+    
+    corFundo EAECED
+    background: #e6e6e6;
+ 
+    Retirada de Convites - 7093896961873131430
+    Renovação de Carteira Social - 8270057621977393403
+    Inclusão de Dependentes - 8607080188552857708
+    
+*/
