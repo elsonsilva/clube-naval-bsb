@@ -1,22 +1,23 @@
-<div data-role="view" data-title="Diretoria" data-layout="main" data-model="APP.models.contacts"  data-use-native-scrolling="true">
+<div data-role="view" data-title="Diretoria" data-layout="main" data-model="APP.models.contacts" data-use-native-scrolling="true">
     <header data-role="header">
         <div data-role="navbar" id="normal" class="km-accent">
             <a id="hamburguer" data-align="left" data-role="button" href="#appDrawer" data-rel="drawer" data-icon="drawer-icon"></a>
             <span class="titulo" data-role="view-title"></span>
-            
         </div>
     </header>
     <div class="corFundo" align="justify">
+                <div class="topSpace"></div>
+            <p id="secretaria">Conheça a nossa diretoria</p>
         <div class="topSpace"></div>
-        <div id="contentDiretoria" class="diretoria" ></div>
+        <div id="contentDiretoria" class="diretoria"></div>
         <div class="topSpace"></div>
     </div>
-    <script>
-        function handleResponse(response) {
+</div>
+<script>
+    function handleResponse(response) {
 
-            $("#contentDiretoria").append("<p>" + response.content + "</p>");
+        $("#contentDiretoria").append("<p>" + response.content + "</p>");
 
-        }
-    </script>
-    <script src="https://www.googleapis.com/blogger/v3/blogs/817691897847430809/pages/6371628333443230398?callback=handleResponse&key=AIzaSyC1_f4NCdpNOw8miHl__HlZHKHvdmOMH-c">
-    </script>
+    }
+</script>
+<script src="https://www.googleapis.com/blogger/v3/blogs/817691897847430809/pages/6371628333443230398?callback=handleResponse&key=AIzaSyC1_f4NCdpNOw8miHl__HlZHKHvdmOMH-c"></script>

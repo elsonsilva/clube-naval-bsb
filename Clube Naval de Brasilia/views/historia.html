@@ -3,21 +3,20 @@
         <div data-role="navbar" id="normal" class="km-accent">
             <a id="hamburguer" data-align="left" data-role="button" href="#appDrawer" data-rel="drawer" data-icon="drawer-icon"></a>
             <span class="titulo" data-role="view-title"></span>
-            
         </div>
     </header>
     <div class="corFundo" align="justify">
-        <object  id="logo2" type="image/svg+xml" data="styles/images/logo2.svg"></object>
+        <object id="logo2" type="image/svg+xml" data="styles/images/logo2.svg"></object>
         <p id="tituloHistoria">
             Clube Naval de Brasília
         </p>
         <div id="contentHistoria" class="historia"></div>
         <div class="topSpace"></div>
     </div>
-    <script>
-        function handleResponse(response) {
-            $("#contentHistoria").append("<p>" + response.content + "</p>");
-        }
-    </script>
-    <script src="https://www.googleapis.com/blogger/v3/blogs/817691897847430809/pages/7586943235949458172?callback=handleResponse&key=AIzaSyC1_f4NCdpNOw8miHl__HlZHKHvdmOMH-c">
-    </script>
+</div>
+<script>
+    function handleResponse(response) {
+        $("#contentHistoria").append("<p>" + response.content + "</p>");
+    }
+</script>
+<script src="https://www.googleapis.com/blogger/v3/blogs/817691897847430809/pages/7586943235949458172?callback=handleResponse&key=AIzaSyC1_f4NCdpNOw8miHl__HlZHKHvdmOMH-c"></script>

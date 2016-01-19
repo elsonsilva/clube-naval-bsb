@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div id="associese" data-role="view" data-title="Associe-se" data-layout="main" data-model="APP.models.contacts" data-use-native-scrolling="true">
     <header data-role="header">
         <div data-role="navbar" id="normal" class="km-accent">
@@ -48,14 +49,18 @@
         <p id="secretaria">Categoria EA</p>
         <div id="contentAssociesex" class="historia"></div>
         <div class="topSpace"></div>
-        <a data-role="button" title="Proposta de Associação" href="http://www.clubenavaldf.com.br/images/clubenaval/artigos/associe_se/proposta.pdf" target="_blank">Proposta de Associação</a>
+        <div class="buttons" align="center">
+        <p>Download</p>
+         <a data-role="button" data-role="listview-link" class="km-justified km-small"  href="http://www.clubenavaldf.com.br/images/clubenaval/artigos/associe_se/proposta.pdf" download>Proposta de Associação</a>
+            <div class="topSpace"></div>
+        <a data-role="button" class="km-justified km-small"  href="http://www.clubenavaldf.com.br/images/clubenaval/artigos/rec_dados/Recadastramento_de_dados.doc" download>Formulário de Cadastramento</a>
         <div class="topSpace"></div>
-        <a data-role="button" title="Formulário de Cadastramento" href="http://www.clubenavaldf.com.br/images/clubenaval/artigos/rec_dados/Recadastramento_de_dados.doc" target="_blank">Proposta de Associação</a>
-        <div class="topSpace"></div>
+            </div>
     </div>
-    <script>
-        function handleResponsex(response) {
-            $("#contentAssociesex").append("<p>" + response.content + "</p>");
-        }
-    </script>
-    <script src="https://www.googleapis.com/blogger/v3/blogs/817691897847430809/pages/953215918037914972?callback=handleResponsex&key=AIzaSyC1_f4NCdpNOw8miHl__HlZHKHvdmOMH-c">
+</div>
+<script>
+    function handleResponsex(response) {
+        $("#contentAssociesex").append("<p>" + response.content + "</p>");
+    }
+</script>
+<script src="https://www.googleapis.com/blogger/v3/blogs/817691897847430809/pages/953215918037914972?callback=handleResponsex&key=AIzaSyC1_f4NCdpNOw8miHl__HlZHKHvdmOMH-c"></script>
